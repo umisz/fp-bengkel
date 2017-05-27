@@ -17,8 +17,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-  </head>
-  <body>
+      <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover{background-color:#f5f5f5}
+    </style>
+</head>
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -36,67 +50,9 @@
                         <a href="">Hai, <?php echo $this->session->userdata("nama"); ?></a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('login/logout'); ?>">Logout</a>
+                        <a href="<?php echo base_url('logout/'); ?>">Logout</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="w3-container">
-        <div class="w3-row">
-            <div class="col-md-3 w3-third">
-                <div class="panel-group">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"><a data-toggle="collapse" href="#collapse1">Transaksi</a></h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse panel">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="<?php echo base_url('admin/'); ?>">List Transaksi</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="<?php echo base_url('admin/tambahTransaksi'); ?>">Tambah Transaksi</a>
-                                    <div class="panel-group">
-                                        <div class="panel panel-default">
-                                            <div class="panel-collapse panel">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">
-                                                        <a href="<?php echo base_url('admin/listtransaksi_pel'); ?>">Pelanggan Sudah Ada</a>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <a href="<?php echo base_url('admin/listtransaksi_pelbaru'); ?>">Pelanggan Baru</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Edit Transaksi</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-group">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title"><a data-toggle="collapse" href="#collapse2">Pelanggan</a></h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse panel">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a href="<?php echo base_url('admin/listpelanggan'); ?>">List Pelanggan</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="<?php echo base_url('admin/tambah_pelanggan'); ?>">Tambah Pelanggan</a>
-                                </li>
-                                <li class="list-group-item">
-                                    <a href="#">Edit Pelanggan</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>

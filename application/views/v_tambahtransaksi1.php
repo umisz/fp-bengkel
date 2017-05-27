@@ -1,7 +1,47 @@
-                <div class="w3-twothird w3-container">
+<div class="w3-container">
+        <div class="w3-row">
+            <div class="col-md-3 w3-third">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-toggle="collapse" href="#collapse1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  Transaksi</a></h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse panel">
+                            <ul class="list-group">
+                                <a class="list-group-item" href="<?php echo base_url('admin/'); ?>"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  List Transaksi</a>
+                                <a class="list-group-item active" href="<?php echo base_url('admin/tambahTransaksi'); ?>"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Transaksi</a>
+                                    <div class="panel-group">
+                                        <div class="panel panel-default">
+                                            <div class="panel-collapse panel">
+                                                <ul class="list-group">
+                                                    <a class="list-group-item" href="<?php echo base_url('admin/listtransaksi_pel'); ?>"><span class="glyphicon glyphicon-check" aria-hidden="true"></span>  Pelanggan Sudah Ada</a>
+                                                    <a class="list-group-item" href="<?php echo base_url('admin/listtransaksi_pelbaru'); ?>"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>  Pelanggan Baru</a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title"><a data-toggle="collapse" href="#collapse2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Pelanggan</a></h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse panel">
+                            <ul class="list-group">
+                                <a class="list-group-item" href="<?php echo base_url('admin/listpelanggan'); ?>"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  List Pelanggan</a>
+                                <a class="list-group-item" href="<?php echo base_url('admin/tambah_pelanggan'); ?>"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Pelanggan</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>                <div class="w3-twothird w3-container">
                 <h1 class="page-header">Tambah Transaksi</h1>
                 <?php foreach($pelanggan as $p){ ?>
-                <form action="<?php echo base_url(). 'admin/add_servis'; ?>" enctype="multipart/form-data" method="post">
+                <form action="<?php echo base_url(). 'admin/add_transaksi'; ?>" enctype="multipart/form-data" method="post">
                     <div class="form-group">
                         <label for="namapelanggan">Nama Pelanggan</label>
                         <input type="text" class="form-control" name="nama_pelanggan" value="<?php echo $p->nama_pelanggan ?>" readonly="readonly">
@@ -18,11 +58,11 @@
                         <label for="tarif">Tarif</label>
                         <input type="text" class="form-control" name="tarif" placeholder="Masukkan tarif servis">
                     </div>
-                    <div class="form-group"> 
+                    <div class="form-group w3-half"> 
                         <label class="control-label" for="tgl_servis">Tanggal Servis</label>
                         <input class="form-control tanggal" id="date" name="tgl_servis" placeholder="DD/MM/YYYY" type="text"/>
                     </div>
-                    <div class="form-group"> 
+                    <div class="form-group w3-half"> 
                         <label class="control-label" for="tgl_ambil">Tanggal Ambil</label>
                         <input class="form-control tanggal" id="date" name="tgl_ambil" placeholder="DD/MM/YYYY" type="text"/>
                     </div>
@@ -31,7 +71,7 @@
                         <input type="file" class="form-control-file" name="gambar" id="exampleInputFile" aria-describedby="fileHelp">
                         <small id="fileHelp" class="form-text text-muted">Upload foto dengan format .jpg .jpeg .png dengan ukuran kurang dari 5 MB</small>
                     </div>
-                    <script src="<?php echo base_url("asset/vendor/bootstrap/js/jquery-ui.js"); ?>"></script>
+                    <script src="<?php echo base_url("asset/vendor/jquery/jquery.js"); ?>"></script>
                     <script src="<?php echo base_url("asset/vendor/bootstrap/js/bootstrap-datepicker.js"); ?>"></script>
                     <script type="text/javascript">
                     $(document).ready(function () {

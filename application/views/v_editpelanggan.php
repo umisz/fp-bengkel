@@ -3,8 +3,11 @@
                     <?php foreach($pelanggan as $p){ ?>
                     <form action="<?php echo base_url(). 'admin/update_pelanggan'; ?>" method="post">
                         <div class="form-group">
+                            <input type="hidden" class="form-control" name="id_pelanggan" value="<?php echo $p->id_pelanggan ?>">
+                        </div>
+                        <div class="form-group">
                             <label for="namapelanggan">Nama Pelanggan</label>
-                            <input type="text" class="form-control" name="nama_pelanggan" value="<?php echo $p->nama_pelanggan ?>" readonly="readonly">
+                            <input type="text" class="form-control" name="nama_pelanggan" value="<?php echo $p->nama_pelanggan ?>">
                         </div>
                         <div class="form-group">
                             <label for="nohp">No. Hp</label>

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Admin Bengkel Mustakim</title>
     <link rel="stylesheet" href="<?php echo base_url("asset/css/w3.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("asset/vendor/bootstrap/css/bootstrap-datepicker3.css"); ?>">
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url("asset/vendor/bootstrap/css/bootstrap.css"); ?>" rel="stylesheet">
     <!-- Custom styles for this template -->

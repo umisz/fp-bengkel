@@ -188,7 +188,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="copyright">
-            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            &copy; Copyright <strong>Bengkel Mustakim</strong>. All Rights Reserved
           </div>
           <div class="credits">
               <!-- 

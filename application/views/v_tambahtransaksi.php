@@ -20,44 +20,43 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title"><a data-toggle="collapse" href="#collapse2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Pelanggan</a></h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse panel">
+                        <ul class="list-group">
+                            <a class="list-group-item" href="<?php echo base_url('admin/listpelanggan'); ?>"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  List Pelanggan</a>
+                            <a class="list-group-item" href="<?php echo base_url('admin/tambah_pelanggan'); ?>"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Pelanggan</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><div class="w3-twothird w3-container">
+        <h1 class="page-header">Tambah Transaksi</h1>
+        <p> Tambahkan transaksi servis berdasarkan pelanggan </p>
+        <div class="w3-third">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Pelanggan Sudah Ada</h3>
+                    <a href="<?php echo base_url('admin/listtransaksi_pel'); ?>" class="btn btn-primary">Tambah Transaksi</a>
                 </div>
             </div>
         </div>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title"><a data-toggle="collapse" href="#collapse2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  Pelanggan</a></h4>
+        <div class="w3-third">
+            <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title">Pelanggan Baru</h3>
+                    <a href="<?php echo base_url('admin/listtransaksi_pelbaru'); ?>" class="btn btn-primary">Tambah Transaksi</a>
                 </div>
-                <div id="collapse2" class="panel-collapse panel">
-                    <ul class="list-group">
-                        <a class="list-group-item" href="<?php echo base_url('admin/listpelanggan'); ?>"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  List Pelanggan</a>
-                        <a class="list-group-item" href="<?php echo base_url('admin/tambah_pelanggan'); ?>"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>  Tambah Pelanggan</a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div><div class="w3-twothird w3-container">
-    <h1 class="page-header">Tambah Transaksi</h1>
-    <p> Tambahkan transaksi servis berdasarkan pelanggan </p>
-    <div class="w3-third">
-        <div class="card">
-            <div class="card-block">
-                <h3 class="card-title">Pelanggan Sudah Ada</h3>
-                <a href="<?php echo base_url('admin/listtransaksi_pel'); ?>" class="btn btn-primary">Tambah Transaksi</a>
             </div>
         </div>
     </div>
-    <div class="w3-third">
-        <div class="card">
-            <div class="card-block">
-                <h3 class="card-title">Pelanggan Baru</h3>
-                <a href="<?php echo base_url('admin/listtransaksi_pelbaru'); ?>" class="btn btn-primary">Tambah Transaksi</a>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
         <!-- Bootstrap core JavaScript
         ================================================== -->

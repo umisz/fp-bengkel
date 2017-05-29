@@ -55,9 +55,9 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="http://localhost/fp/home">Home</a></li>
-          <li><a href="http://localhost/fp/home/about">Tentang Kami</a></li>
-          <li class="menu-active"><a href="http://localhost/fp/home/jenis_servis">Jenis Servis</a></li>
+          <li><a href="<?php echo base_url("home/"); ?>">Home</a></li>
+          <li><a href="<?php echo base_url("home/about"); ?>">Tentang Kami</a></li>
+          <li class="menu-active"><a href="<?php echo base_url("home/jenis_servis"); ?>">Jenis Servis</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -77,7 +77,7 @@
       
       <div class="row">
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(<?php echo base_url("asset/img/alternator.jpg"); ?>);">
+          <a class="portfolio-item" style="background-image: url(<?php echo base_url("asset/img/alternator.JPG"); ?>);">
             <div class="details">
               <h4>Alternator / Sepul</h4>
               <span>Tarif mulai dari Rp 40.000</span>
@@ -95,7 +95,7 @@
         </div>
         
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(<?php echo base_url("asset/img/pompa-air.jpg"); ?>);">
+          <a class="portfolio-item" style="background-image: url(<?php echo base_url("asset/img/pompa-air.JPG"); ?>);">
             <div class="details">
               <h4>Pompa Air</h4>
               <span>Tarif mulai dari Rp 35.000</span>

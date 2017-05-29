@@ -49,13 +49,13 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="<?php echo base_url("asset/img/logo1.png"); ?>" alt="Imperial">
+          <img class="" src="<?php echo base_url("asset/img/logo1.png"); ?>" alt="Bengkel Mustakim">
         </div>
         
         <h1><strong>Welcome!</strong></h1>
         <h2>Kami melayani <span class="rotating">servis alternator, servis peralatan rumah tangga, konsultasi kerusakan</span></h2>
         <div class="actions">
-          <a href="http://localhost/fp/home/about" class="btn-get-started">Get Started</a>
+          <a href="<?php echo base_url("home/about"); ?>" class="btn-get-started">Get Started</a>
         </div>
       </div>
     </div>
@@ -75,9 +75,9 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="http://localhost/fp/home">Home</a></li>
-          <li><a href="http://localhost/fp/home/about">Tentang Kami</a></li>
-          <li><a href="http://localhost/fp/home/jenis_servis">Jenis Servis</a></li>
+          <li class="menu-active"><a href="<?php echo base_url("home/"); ?>">Home</a></li>
+          <li><a href="<?php echo base_url("home/about"); ?>">Tentang Kami</a></li>
+          <li><a href="<?php echo base_url("home/jenis_servis"); ?>">Jenis Servis</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

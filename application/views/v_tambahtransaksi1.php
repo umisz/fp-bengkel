@@ -60,7 +60,7 @@
         </div>
         <div class="form-group w3-half"> 
             <label class="control-label" for="tgl_servis">Tanggal Servis</label>
-            <input class="form-control tanggal" id="date"name="tgl_servis" placeholder="DD/MM/YYYY" type="text"/>
+            <input class="form-control tanggal" name="tgl_servis" placeholder="DD/MM/YYYY" type="text"/>
         </div>
         <div class="form-group w3-half"> 
             <label class="control-label" for="tgl_ambil">Tanggal Ambil</label>

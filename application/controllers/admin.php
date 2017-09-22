@@ -133,8 +133,8 @@ class Admin extends CI_Controller{
 		$config['upload_path']          = './upload/';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['max_size']             = 10000;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_width']            = 1080;
+		$config['max_height']           = 1080;
 
 		$this->load->library('upload', $config);
 		$this->upload->initialize($config);

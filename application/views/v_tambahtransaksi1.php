@@ -60,12 +60,13 @@
         </div>
         <div class="form-group w3-half"> 
             <label class="control-label" for="tgl_servis">Tanggal Servis</label>
-            <input class="form-control tanggal" name="tgl_servis" placeholder="DD/MM/YYYY" type="text"/>
+            <input class="form-control tanggal1" name="tgl_servis" placeholder="DD/MM/YYYY" type="text"/>
         </div>
         <div class="form-group w3-half"> 
             <label class="control-label" for="tgl_ambil">Tanggal Ambil</label>
-            <input class="form-control tanggal" name="tgl_ambil" placeholder="DD/MM/YYYY" type="text"/>
+            <input class="form-control tanggal2" name="tgl_ambil" placeholder="DD/MM/YYYY" type="text"/>
         </div>
+        <div id="notif">Cek Tanggal</div>
         <div class="form-group">
             <label for="uploadFoto">Upload Foto Barang</label>
             <input type="file" class="form-control-file" name="gambar" id="exampleInputFile" aria-describedby="fileHelp">
@@ -74,13 +75,34 @@
         <script src="<?php echo base_url("asset/vendor/jquery/jquery-3.2.1.min.js"); ?>"></script>
         <script type="text/javascript">
         $(document).ready(function () {
-            $('.tanggal').datepicker({
+            $('.tanggal1').datepicker({
                 format: "dd-mm-yyyy",
                 todayHighlight: true,
                 autoclose:true
             });
         });
+        $(document).ready(function () {
+            $('.tanggal2').datepicker({
+                format: "dd-mm-yyyy",
+                todayHighlight: true,
+                autoclose:true
+            });
+        });
+
+        $('#notif').bind('click', function() {
+          var selectedDate = $('.tanggal2').datepicker('getDate');
+          var today = new Date();
+          today.setHours(0);
+          today.setMinutes(0);
+          today.setSeconds(0);
+          if (Date.parse(today) == Date.parse(selectedDate)) {
+            alert('tidak valid!');
+            } else {
+                alert('valid');
+            }
+        });
         </script>
+
         <button type="submit" class="btn btn-primary">Tambah</button>
     </form>
     <?php } ?>
